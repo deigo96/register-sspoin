@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/register.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/image/logo-ss.png"
+            alt=""
+            class="d-inline-block align-text-top main-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <!-- <div>
+            <button type="button" class="btn btn-primary btn-login">
+              Login
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container box-tagline">
+      <div class="row">
+        <div class="col-md-12">
+          <form id="msform">
+            <!-- progressbar -->
+            <div class="progres">
+              <ul id="progressbar">
+                <li class="active" id="account"><strong>Identitas</strong></li>
+                <li id="personal"><strong>Informasi Kontak</strong></li>
+                <li id="payment"><strong>Buat Akun</strong></li>
+                <li id="confirm"><strong>Kata Sandi</strong></li>
+              </ul>
+            </div>
+            <!-- fieldsets -->
+            <fieldset class="firstpage">
+              <center>
+                <!-- <form action="" id="identitas"> -->
+                <div class="form-card">
+                  <!-- <h2 class="fs-title">Account Information</h2> -->
+                  <div>
+                    <label
+                      for="exampleInputUsername"
+                      class="form-label text-label-username"
+                      >Tipe Customer</label
+                    >
+                    <div class="d-flex bd-highlight mb-3">
+                      <div class="p-2 bd-highlight">
+                        <div class="form-check">
+                          <input
+                            class="radio individu statusCustomer"
+                            type="radio"
+                            name="tipe_customer"
+                            value="Individu"
+                            checked
+                          />
+                          <label
+                            class="form-check-label lable-individu"
+                            for="exampleRadios1"
+                          >
+                            Individu
+                          </label>
+                        </div>
+                      </div>
+                      <div class="p-2 bd-highlight">
+                        <div class="form-check">
+                          <input
+                            class="radio company statusCustomer"
+                            type="radio"
+                            name="tipe_customer"
+                            value="Perusahaan"
+                            required
+                          />
+                          <label
+                            class="form-check-label lable-company"
+                            for="exampleRadios1"
+                          >
+                            Perusahaan
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="exampleInputUsername"
+                      class="form-label text-label-username"
+                      >Nama Lengkap</label
+                    >
+                    <div class="row">
+                      <div class="col-md-2">
+                        <select
+                          class="form-select text-input statusNama"
+                          aria-label="Default select example"
+                        >
+                          <option value="MR">MR</option>
+                          <option value="MRS">MRS</option>
+                        </select>
+                      </div>
+                      <div class="col-md-10">
+                        <input
+                          type="text"
+                          class="form-control text-input"
+                          name="namaLengkap"
+                          id="namaLengkap"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="display-perusahaan" style="display: none">
+                    <label
+                      for="exampleInputUsername"
+                      class="form-label text-label-username"
+                      >Nama Perusahaan</label
+                    >
+                    <div class="row">
+                      <div class="col-md-2">
+                        <select
+                          class="form-select text-input"
+                          aria-label="Default select example"
+                        >
+                          <option value="PT">PT</option>
+                          <option value="CV">CV</option>
+                          <option value="TBK">TBK</option>
+                          <option value="Corp">Corp</option>
+                          <option value="Inc">Inc</option>
+                          <option value="UD">UD</option>
+                          <option value="Ltd">Ltd</option>
+                        </select>
+                      </div>
+                      <div class="col-md-10">
+                        <input
+                          type="text"
+                          class="form-control text-input"
+                          id="namaPerusahaan"
+                          name="namaPerusahaan"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="label-error">
+                    <label for="" id="namaLengkapError" class="error"></label>
+                  </div>
+                </div>
+                <!-- </form> -->
+              </center>
+              <button type="button" class="btn btn-primary btn-previous">
+                <span class="text-coba-demo">Kembali</span>
+              </button>
+              <span class="text-indent">&nbsp;</span>
+              <input
+                type="button"
+                name="next"
+                class="btn btn-primary btn-next next step1"
+                value="Selanjutnya"
+              />
+            </fieldset>
+            <fieldset class="secondpage">
+              <center>
+                <div class="form-card">
+                  <label for="alamat" class="form-label text-label-username"
+                    >Alamat</label
+                  >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <textarea
+                        name="alamat"
+                        id="alamat"
+                        cols="5"
+                        rows="5"
+                        class="form-control form-textarea"
+                        placeholder="Isi Alamat Lengkap"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <label for="noTelepon" class="form-label text-label-username"
+                    >No. Telepon</label
+                  >
+                  <div class="row">
+                    <div class="col-md-2">
+                      <select
+                        name="kodeTelepon"
+                        id="kodeTelepon"
+                        class="form-select text-input"
+                      >
+                        <option value="+62">+62</option>
+                      </select>
+                    </div>
+                    <div class="col-md-10">
+                      <input
+                        type="number"
+                        name="noTelepon"
+                        id="noTelepon"
+                        class="no-spinner form-control text-input"
+                      />
+                    </div>
+                    
+                  </div>
+                  <div class="label-error">
+                    <label for="" id="errorStep2" class="error"></label>
+                  </div>
+                </div>
+              </center>
+              <button
+                type="button"
+                class="btn btn-primary btn-previous previous"
+              >
+                <span class="text-coba-demo">Kembali</span>
+              </button>
+              <span class="text-indent">&nbsp;</span>
+              <input
+                type="button"
+                name="next"
+                class="btn btn-primary btn-next next step2"
+                value="Selanjutnya"
+              />
+            </fieldset>
+            <fieldset class="thirdpage">
+              <center>
+                <div class="form-card">
+                  <label for="username" class="form-label text-label-username"
+                    >Username</label
+                  >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        class="form-control text-input"
+                        placeholder="Masukan Username"
+                      />
+                    </div>
+                  <label for="" id="errorUsername" class="error"></label>
+                  </div>
+
+                  <label for="email" class="form-label text-label-username"
+                    >Alamat Email</label
+                  >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control text-input"
+                        placeholder="Masukan Alamat Email Anda"
+                      />
+                    </div>
+                  </div>
+                  <div class="label-error">
+                    <label for="" id="errorEmail" class="error errorStep3"></label>
+                  </div>
+                </div>
+              </center>
+              <button
+                type="button"
+                class="btn btn-primary btn-previous previous"
+              >
+                <span class="text-coba-demo">Kembali</span>
+              </button>
+              <span class="text-indent">&nbsp;</span>
+              <input
+                type="button"
+                name="next"
+                class="btn btn-primary btn-next next step3"
+                value="Selanjutnya"
+              />
+            </fieldset>
+            <fieldset class="fourthpage">
+              <center>
+                <div class="form-card">
+                  <label for="Password" class="form-label text-label-username"
+                    >Password</label
+                  >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control text-input form-password"
+                        placeholder="Password"
+                      />
+                      <span
+                        class="fa fa-eye-slash"
+                        style="margin-left: -30px; cursor: pointer"
+                        id="togglePassword"
+                      ></span>
+                    </div>
+                  </div>
+
+                  <label
+                    for="konfirmasiPassword"
+                    class="form-label text-label-username"
+                    >Konfirmasi Password</label
+                  >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input
+                        type="password"
+                        name="konfirmPassword"
+                        id="konfirmPassword"
+                        class="form-control text-input"
+                        placeholder="Konfirmasi Password"
+                      />
+                      <span
+                        class="fa fa-eye-slash"
+                        style="margin-left: -30px; cursor: pointer"
+                        id="toggleKonfirmPassword"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="kebijakan">
+                        <span
+                          >Anda akan menerima notifikasi email sebagai
+                          konfirmasi akun dan menyetujui Ketentuan dan kebijakan
+                          SUPERSPRING</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="padding-top: 10px">
+                    <div class="col-md-12">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="kebijakan"
+                        id="kebijakan"
+                      />
+                      Saya setuju
+                    <label for="" id="errorSyarat" class="error errorSyarat">dasd</label>
+                  </div>
+                  </div>
+                  <div class="label-error">
+                    <label for="" id="errorPass" class="error errorStep4"></label>
+                  </div>
+                </div>
+              </center>
+              <input type="hidden" name="referralUser" id="referralUser">
+              <button
+                type="button"
+                class="btn btn-primary btn-previous previous"
+              >
+                <span class="text-coba-demo">Kembali</span>
+              </button>
+              <span class="text-indent">&nbsp;</span>
+              <input
+                type="button"
+                name="next"
+                id="daftar-akun"
+                class="btn btn-primary btn-next step4"
+                value="Daftar"
+              />
+            </fieldset>
+            <fieldset class="fifthpage">
+              <div class="px-4 text-center">
+                <img src="/assets/image/check.png" alt="" class="d-block mx-auto image-success">
+                <h3 class="display-5 fw-bold">Thanks for your registration, please check your inbox!</h3>
+                <h6>Please click the link provided in the email to complete your registration</h6>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script> -->
+    <script src="assets/js/main.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
+  </body>
+</html>

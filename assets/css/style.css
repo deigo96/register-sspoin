@@ -1,0 +1,621 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+.navbar {
+    min-height: 80px;
+}
+
+/* .navbar-brand {
+height: 80px;
+line-height: 80px;
+} */
+
+.navbar-toggler {
+/* (80px - button height 34px) / 2 = 23px */
+width: 50px;
+padding: 9px 10px !important;
+background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+border-radius: 4px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+border-color: rgb(255, 255, 255);
+} 
+
+.main-logo {
+    width: 200px;
+    height: 35px;
+    margin-left: 80px;
+}
+
+.menu-item {
+    margin-right: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #808080;
+    font-family: 'Poppins';
+}
+
+.box-tagline {
+    margin-top: 38px;
+}
+
+.tagline {
+    color: #0C5179;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.main-image {
+    width: 580px;
+    height: 386px;
+    margin-left: -7%;
+    margin-top: 30px;
+}
+
+.ios-app {
+    margin-top: 15px;
+    display: block;
+}
+
+.ios-image  {
+    width: 180px;
+}
+
+.app-image  {
+    width: 180px;
+}
+
+.form-input {
+    margin-top: -4.5%;
+}
+
+.text-label-username {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;
+    color: #202020;
+}
+
+.text-label-password {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;
+    color: #202020;
+}
+
+.text-input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -10px;
+    box-sizing: border-box;
+    height: 55px;
+    background: #FAFBFC !important;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-textarea{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -10px;
+    box-sizing: border-box;
+    height: 100px;
+    background: #FAFBFC !important;
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.chekbox{
+    box-sizing: border-box;               
+    width: 25px;
+    height: 25px;
+    border: 2px solid #b0adad;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.chexbox-label{
+    margin-top: 7px;
+    margin-left: -10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;    
+}
+
+.forgot-password{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;    
+    color: #202020;  
+}
+
+.btn-submit {
+    margin-top:50px;
+    background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-coba-demo {
+    margin-top:20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;    
+}
+
+.text-coba-demo {
+    background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.text-daftar {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 20px;      
+}
+
+.radio{ 
+    width: 22px;
+    height: 22px;
+    border: 2px solid #b0adad;
+    border-radius: 4px;
+    margin-right: 20px;
+    accent-color: #0082D0;
+}
+
+.radio.individu{ 
+    margin-left: -30px;
+}
+
+.lable-individu{
+    margin-left: -5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #808080;
+}
+
+.radio.company{ 
+    margin-left: 0px;
+}
+
+.lable-company{
+    margin-left: -5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #808080;
+}
+
+.btn-next {
+    background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.btn-previous {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;   
+    border-radius: 20px; 
+}
+
+input.btn-previous{
+    color: #0082D0
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+    width: 50%;
+    /* margin: 0 3% 20px 3%; */
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E;
+    padding-bottom: 25px;
+}
+
+/*Blue Buttons*/
+#msform .action-button {
+    width: 100px;
+    background: skyblue;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+}
+
+/*Dropdown List Exp Date*/
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px;
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*progressbar*/
+/* .cont{
+    height: 100%; 
+    left: calc(50% - 350px);
+    padding: 0;
+    margin: 40px auto;
+    position: absolute;
+  } */
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #77BBE4;
+    /* background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family: 'Poppins';
+    content: "1";
+    font-size: 13px;
+}
+
+#progressbar #personal:before {
+    font-family: 'Poppins';
+    content: "2";
+    font-size: 13px;
+}
+
+#progressbar #payment:before {
+    font-family: 'Poppins';
+    content: "3";
+    font-size: 13px;
+}
+
+#progressbar #confirm:before {
+    font-family: 'Poppins';
+    content: "4";
+    font-size: 13px;
+}
+
+/*ProgressBar before any progress*/
+#progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: lightgray;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    z-index: -1;
+}
+/* #progressbar li:first-child::after{
+    content: none;
+} */
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    /* background: #368ec4; */
+}
+
+.text-indent {
+    padding: 0 160px;
+}
+
+.btn-login {
+    width: 240px;
+    height: 42px;
+    left: 1560px;
+    top: 34px;
+
+    /* 1 */
+
+    background: linear-gradient(100.56deg, #0082D0 0%, #77BBE4 96.98%);
+    border-radius: 20px;
+}
+
+.image-success {
+    width: 25%;
+}
+
+
+@media (max-width:680px) { 
+    /* #progressbar li#account::after{
+        margin: 0 100px;
+    } */
+    .main-logo {
+        width: 150px;
+        height: 30px;
+        margin-left: 0px;;
+    }
+
+    .tagline {
+        display: none;
+    }
+    
+    .main-image {
+        width:100%;
+        height: 100%;
+        margin-top: -10px;
+    }
+
+    .ios-app  {
+        display: none;
+    }
+
+    .text-label-username {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .text-label-password {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    
+    .text-input {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    input[type=number].no-spinner::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+    .chekbox{
+        margin-left: 5px;             
+        width: 19px;
+        height: 19px;
+    }
+
+    .kebijakan {
+        margin-left: 10px;
+    }
+
+    input.checkbox-kebijakan {
+        scale: (2);
+        padding: 10px;
+    }
+
+    span.password {
+        margin-left: -30px;
+    cursor: pointer;
+    }
+    
+    .chexbox-label{
+        font-size: 12px;    
+    }
+    
+    .forgot-password{
+        margin-right: 10px;
+        font-size: 12px;  
+    }
+
+    .btn-submit {
+        font-size: 12px;
+        height: 50px;
+    }
+    
+    .btn-coba-demo {
+        font-size: 12px;   
+        height: 50px; 
+    }
+
+    .text-daftar {
+        font-size: 12px;    
+    }
+    #msform fieldset .form-card {
+        width: 100%;
+        /* margin: 0 3% 20px 3%; */
+    }
+
+    #progressbar {
+        margin-bottom: 10px;
+    }
+
+    #progressbar li {
+        margin-left: -20px;
+        list-style-type: none;
+        font-size: 12px;
+        width: 30%;
+        float: left;
+        position: relative;
+    }
+
+    #msform fieldset .form-card {
+        width: 100%;
+        /* margin: 0 3% 20px 3%; */
+    }
+    
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+    
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+    
+}
+
+.label-error {
+    padding-bottom: 17px;
+}
+
+label.error{
+    display: none;
+    position: absolute;
+    color: red
+}
